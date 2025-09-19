@@ -1,4 +1,4 @@
-/* TEMPORARY: Add colored borders to see sections */
+
 section {
     border: 3px solid rgb(0, 0, 0);
 }
@@ -6,53 +6,50 @@ header {
     border: 3px solid rgb(87, 0, 134);
 }
 
-/* 1. Change Body Background & Text Color */
 body {
-    background-color: #097aeb; /* Light gray */
-    color: #ffffff;           /* Dark gray text */
+    background-color: #097aeb; 
+    color: #ffffff;           
 }
 
-/* 2. Customize Font Family */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* 3. Add Spacing Between Sections */
 section {
-    margin: 30px 0;          /* Space outside */
-    padding: 25px;           /* Space inside */
+    margin: 30px 0;          
+    padding: 25px;           
 }
 
-/* 4. Change Alignment */
 header {
-    text-align: center;      /* Center your name */
+    text-align: center;      
 }
 
 #about {
-    text-align: justify;     /* Justify about text */
+    text-align: justify;     
 }
 
-/* 5. Style Headings */
+
 h1 {
     font-size: 3em;
     font-weight: 700;
-    color: #2c5530;         /* Dark green */
+    color: #2c5530;         
 }
 
 h2 {
     font-size: 2em;
     font-weight: 600;
-    color: #4a5568;         /* Medium gray */
+    color: #4a5568;         
 }
 
-/* 6. Transform Your Name */
+
 h1 {
     text-transform: uppercase;
     letter-spacing: 3px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
-/* 7. Style Experience Blocks */
+
 #experience li {
     background: #e8f5e9;
     border-left: 5px solid #4CAF50;
@@ -60,10 +57,7 @@ h1 {
     margin: 10px 0;
     list-style: none;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
 
-/* 8. Style Connect Links */
 #connect a {
     color: #4CAF50;
     text-decoration: none;
