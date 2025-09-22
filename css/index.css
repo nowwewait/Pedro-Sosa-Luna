@@ -144,3 +144,73 @@ h2 {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
+
+
+/* for tnblet */
+@media (min-width: 768px) {
+    /* Header/Nav */
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .experience-item {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .job-description {
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+
+    #connect a {
+        padding: 15px 25px;
+        font-size: 1.1rem;
+    }
+}
+
+/* for computer desktop */
+@media (min-width: 1024px) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    section {
+        margin: 50px 0;
+        padding: 35px;
+    }
+
+    .experience-item {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .experience-header {
+        margin-bottom: 1rem;
+    }
+
+    #connect a {
+        padding: 20px 30px;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
