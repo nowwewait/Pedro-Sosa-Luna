@@ -146,8 +146,16 @@ h2 {
 }
 
 
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
-/* for tnblet */
+
+
+/* for tablet */
+
 @media (min-width: 768px) {
     /* Header/Nav */
     nav ul {
@@ -209,8 +217,3 @@ h2 {
         padding: 20px 30px;
         font-size: 1.2rem;
     }
-}
-
-
-
-
