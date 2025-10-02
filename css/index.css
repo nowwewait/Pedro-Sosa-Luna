@@ -145,12 +145,16 @@ h2 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+
 #skills ul {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
+
+
+/* for tablet */
 
 @media (min-width: 768px) {
     /* Header/Nav */
@@ -213,4 +217,3 @@ h2 {
         padding: 20px 30px;
         font-size: 1.2rem;
     }
-}
