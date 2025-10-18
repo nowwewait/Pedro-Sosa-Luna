@@ -50,3 +50,43 @@ messageForm.addEventListener('submit', function(event) {
     // Clear the form
     event.target.reset();
 });
+
+// ASSIGNMENT CODE: Fetch GitHub Repositories
+async function getGitHubRepos() {
+    try {
+        console.log("Starting to fetch GitHub repos...");
+        const response = await fetch('https://api.github.com/users/Nowwewait/repos');
+        
+        if (!response.ok) {
+            throw new Error('Failed to fetch repositories');
+        }
+        
+        const repos = await response.json();
+        console.log("GitHub repos received:", repos);
+        
+        // Get the projects list from your HTML
+        const projectsList = document.getElementById('projects-list');
+        
+        // Clear any existing content
+        projectsList.innerHTML = '';
+        
+        // Add each repo to the projects list
+        repos.forEach(repo => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `
+                <strong>${repo.name}</strong>: ${repo.description || 'No description'}
+            `;
+            projectsList.appendChild(listItem);
+        });
+        
+        console.log("GitHub repos displayed on page!");
+        
+    } catch (error) {
+        console.error('Error loading GitHub repositories:', error);
+        const projectsList = document.getElementById('projects-list');
+        projectsList.innerHTML = '<li>Failed to load projects</li>';
+    }
+}
+
+// Call the function when the page loads
+getGitHubRepos();
