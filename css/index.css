@@ -349,3 +349,28 @@ form[name="leave_message"] button:hover {
         width: auto;
     }
 }
+
+#skills ul li {
+    background: yellow;
+    padding: 5px;
+    margin: 2px;
+}
+
+/* Skills Section Styling */
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    background: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}

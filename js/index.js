@@ -6,8 +6,22 @@ let copyright = document.createElement('p');
 copyright.innerHTML = `© Pedro Sosa ${thisYear}`;
 footer.appendChild(copyright);
 
-// NEW CODE: Message Form functionality
+// Skills List
+// NEW: Skills List
+const skills = ['HTML', 'CSS', 'JavaScript', 'Git', 'GitHub', 'Problem Solving'];
+const skillsSection = document.querySelector('section#skills ul');
+
+skills.forEach(skill => {
+    const skillItem = document.createElement('li');
+    skillItem.textContent = skill;
+    skillsSection.appendChild(skillItem);
+});
+//  Message Form functionality 
 const messageForm = document.querySelector('form[name="leave_message"]');
+// ... rest of your code
+
+
+
 
 messageForm.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent page refresh
